@@ -4,6 +4,8 @@ Mask the entire viewport or element with auto adjustment.
 
 default `z-index` is 30, change the `z-index` if you want some covered element to be shown.
 
+[demo](http://chemzqm.github.io/mask/)
+
 ## Installation
 
 Install with [component(1)](http://component.io):

@@ -4,6 +4,7 @@
   "description": "Mask an element with spin & auto adjustment",
   "version": "0.0.1",
   "keywords": [],
+  "demo": "http://chemzqm.github.io/mask/",
   "dependencies": {
     "chemzqm/computed-style": "*",
     "component/classes": "*"
