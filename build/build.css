@@ -1,0 +1,88 @@
+.mask {
+  background-color: #666;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 30;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+  display: none;
+}
+
+.mask.hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(1turn); transform: rotate(1turn); }
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(1turn); transform: rotate(1turn); }
+}
+
+.mask-spin {
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+  margin: 0 .5em;
+  font-size: 12px;
+  text-indent: 999em;
+  overflow: hidden;
+  -webkit-animation: spin 1s infinite steps(8);
+  animation: spin 1s infinite steps(8);
+}
+
+.mask-spin:before,
+.mask-spin:after,
+.mask-spin > div:before,
+.mask-spin > div:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 2.25em; /* (container width - part width)/2  */
+  width: .5em;
+  height: 1.5em;
+  border-radius: .2em;
+  background: #eee;
+  -webkit-box-shadow: 0 3.5em #eee;
+  box-shadow: 0 3.5em #eee; /* container height - part height */
+  -webkit-transform-origin: 50% 2.5em;
+  -ms-transform-origin: 50% 2.5em;
+  transform-origin: 50% 2.5em; /* container height / 2 */
+}
+
+.mask-spin:before {
+  background: #555;
+}
+
+.mask-spin:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background: #777;
+}
+
+.mask-spin > div:before {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  background: #999;
+}
+
+.mask-spin > div:after {
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  background: #bbb;
+}
+
+
