@@ -49,9 +49,6 @@
       cursor: pointer;
       opacity: 0.6;
     }
-    .mask-spin {
-      font-size: 6px;
-    }
   </style>
 </head>
 <body>
@@ -65,7 +62,7 @@
   <script>
     var Mask = require('mask');
     var m = new Mask(null, true);
-    m.spin();
+    m.spin(30);
     document.getElementById('trigger').addEventListener('click', function(e) {
       m.show();
       setTimeout(function() {

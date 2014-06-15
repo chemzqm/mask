@@ -18,11 +18,11 @@
   opacity: 0;
 }
 
-@-webkit-keyframes spin {
+@-webkit-keyframes mask-spin {
   to { -webkit-transform: rotate(1turn); transform: rotate(1turn); }
 }
 
-@keyframes spin {
+@keyframes mask-spin {
   to { -webkit-transform: rotate(1turn); transform: rotate(1turn); }
 }
 
@@ -37,8 +37,8 @@
   font-size: 12px;
   text-indent: 999em;
   overflow: hidden;
-  -webkit-animation: spin 1s infinite steps(8);
-  animation: spin 1s infinite steps(8);
+  -webkit-animation: mask-spin 1s infinite steps(8);
+  animation: mask-spin 1s infinite steps(8);
 }
 
 .mask-spin:before,
