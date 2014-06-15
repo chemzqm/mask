@@ -1,7 +1,7 @@
 {
   "name": "mask",
   "repository": "chemzqm/mask",
-  "description": "Mask an element with auto adjustment",
+  "description": "Mask an element with spin & auto adjustment",
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
