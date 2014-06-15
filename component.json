@@ -1,0 +1,22 @@
+{
+  "name": "mask",
+  "repository": "chemzqm/mask",
+  "description": "Mask an element with auto adjustment",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "chemzqm/computed-style": "*",
+    "component/classes": "*"
+  },
+  "development": {
+    "dependencies": {}
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "mask.css"
+  ]
+}

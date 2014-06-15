@@ -1,0 +1,71 @@
+.mask {
+  background-color: #666;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 30;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 300ms;
+  display: none;
+}
+
+.mask.hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
+@keyframes spin {
+  to { transform: rotate(1turn); }
+}
+
+.mask-spin {
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+  margin: 0 .5em;
+  font-size: 12px;
+  text-indent: 999em;
+  overflow: hidden;
+  animation: spin 1s infinite steps(8);
+}
+
+.mask-spin:before,
+.mask-spin:after,
+.mask-spin > div:before,
+.mask-spin > div:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 2.25em; /* (container width - part width)/2  */
+  width: .5em;
+  height: 1.5em;
+  border-radius: .2em;
+  background: #eee;
+  box-shadow: 0 3.5em #eee; /* container height - part height */
+  transform-origin: 50% 2.5em; /* container height / 2 */
+}
+
+.mask-spin:before {
+  background: #555;
+}
+
+.mask-spin:after {
+  transform: rotate(-45deg);
+  background: #777;
+}
+
+.mask-spin > div:before {
+  transform: rotate(-90deg);
+  background: #999;
+}
+
+.mask-spin > div:after {
+  transform: rotate(-135deg);
+  background: #bbb;
+}
