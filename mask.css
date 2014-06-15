@@ -17,7 +17,7 @@
   opacity: 0;
 }
 
-@keyframes spin {
+@keyframes mask-spin {
   to { transform: rotate(1turn); }
 }
 
@@ -32,7 +32,7 @@
   font-size: 12px;
   text-indent: 999em;
   overflow: hidden;
-  animation: spin 1s infinite steps(8);
+  animation: mask-spin 1s infinite steps(8);
 }
 
 .mask-spin:before,

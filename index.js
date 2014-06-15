@@ -12,15 +12,15 @@ function Mask(el) {
   this.el = this.create();
 }
 
-Mask.prototype.spin = function () {
+Mask.prototype.spin = function (size) {
+  size = size || 60;
   var el = document.createElement('div');
   el.appendChild(el.cloneNode());
   el.className = 'mask-spin';
   this.el.appendChild(el);
-  var w = parseInt(styles(el).width);
-  var h = parseInt(styles(el).height);
-  el.style.marginLeft = (- (w/2)) + 'px'
-  el.style.marginTop = (- (h/2)) + 'px'
+  el.style.fontSize = (size/5) + 'px';
+  el.style.marginLeft = (- (size/2)) + 'px'
+  el.style.marginTop = (- (size/2)) + 'px'
 }
 
 Mask.prototype.create = function () {

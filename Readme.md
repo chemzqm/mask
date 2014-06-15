@@ -28,11 +28,10 @@ Default to document.body (cover the entire viewport if body is not scrollable).
 
 Make sure element is positioned `relative` or `absolute` or `fixed`
 
-### .spin()
+### .spin([size | 60])
 
 Enable a spin in the middle of mask.
 
-Chage `font-size` of `mask-spin` to adjust spin size.
 
 ### .show()
 
