@@ -28,11 +28,13 @@
     "computed-style": "^0.3.0"
   },
   "devDependencies": {
+    "css-loader": "^0.23.0",
     "growl": "^1.8.1",
     "gulp": "^3.9.0",
     "gulp-live-serve": "^1.0.0",
     "gulp-livereload": "^3.8.1",
     "gulp-util": "^3.0.7",
+    "style-loader": "^0.13.0",
     "webpack": "^1.12.9"
   },
   "style": "mask.css"
