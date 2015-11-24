@@ -1,3 +1,4 @@
+require('../mask.css')
 var Mask = require('..')
 var m = new Mask(null, true)
 m.spin(30)
