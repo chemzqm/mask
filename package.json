@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "css-loader": "^0.23.0",
-    "growl": "^1.8.1",
+    "growl": "^1.9.1",
     "gulp": "^3.9.0",
     "gulp-live-serve": "^1.0.0",
     "gulp-livereload": "^3.8.1",
