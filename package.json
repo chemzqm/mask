@@ -35,7 +35,7 @@
     "gulp-livereload": "^3.8.1",
     "gulp-util": "^3.0.7",
     "style-loader": "^0.13.0",
-    "webpack": "^1.12.9"
+    "webpack": "^1.12.14"
   },
   "style": "mask.css"
 }
