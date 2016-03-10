@@ -24,7 +24,7 @@
     "classes": "component-classes"
   },
   "dependencies": {
-    "component-classes": "^1.2.4",
+    "component-classes": "^1.2.5",
     "computed-style": "^0.3.0"
   },
   "devDependencies": {
